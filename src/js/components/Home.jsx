@@ -8,8 +8,8 @@ function Home() {
 	return (
 		<div className="container">
 			<h1 className="title">BLOC NOTE</h1>
-		</div>
 	
+		</div>
 	
 
 

@@ -88,7 +88,7 @@ flex-wrap: wrap;
   align-items: center;
   text-align: center;
   width: 100%;
-  margin-top: 20px;
+  margin-top: auto;
   font-weight: bold;
   font-size: 2rem;
   flex-wrap: wrap;
@@ -109,4 +109,11 @@ flex-wrap: wrap;
 #imagen {
   background-image: url(https://i.pinimg.com/236x/5e/a3/05/5ea305453bdf8d774ca734b7b9dd3838.jpg);
  background-size: cover;         
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
 }

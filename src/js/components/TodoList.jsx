@@ -15,22 +15,26 @@ function TodoList(
             setTarea("");
         }
     }
-    function eliminarTarea(index) { 
+    function eliminarTarea(index) {
         setTodo(todo.filter((tarea, i) => i !== index));
-      console.log(index)  ;
-        
+        console.log(index);
+
     }
 
     console.log(todo);
     return (
+
         <div className="list" id="tarea">
-            <input 
+            <div className="filter-content">
+                {todo.length} items left
+            </div>
+            <input
                 type="text"
                 placeholder="What needs to be done?"
                 value={tarea}
                 onChange={(e) => setTarea(e.target.value)}
                 onKeyDown={handleKeyDown}
-              
+
 
 
             />
@@ -42,13 +46,11 @@ function TodoList(
                         <span>{tarea}</span>
                         <button onClick={() => eliminarTarea(index)} className="clean">X</button>
 
-                    </li> 
+                    </li>
                 ))}
             </ul>
-            <div className="filter-content">
-                {todo.length} items left
-            </div>
-            
+
+
 
         </div>
     )
